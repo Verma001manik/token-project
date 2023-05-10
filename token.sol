@@ -25,6 +25,7 @@ contract MyToken {
 
     // mint function
     function mint (address _address, uint _value) public{
+    //the value gets added to the total supply and also it is added to the balances of the given address
         totalSupply += _value;
         balances[_address] += _value;
 
@@ -32,9 +33,12 @@ contract MyToken {
        // burn function
 
     function burn (address _address, uint _value) public{
+    //checking if balance of the address is greater than value or not 
         if(balances[_address]>= _value){
+        //value shouldn't be greater than the balance of the address!!!
             totalSupply -= _value;
             balances[_address] -= _value;
+            //we have subtracted the totalsupply by the value and also we decreased the balance of the given address by value
 
 
         }
