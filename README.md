@@ -12,6 +12,8 @@ function mint (address _address, uint _value) public{
   ```
   * This function take's 2 parameter's address and value.
   * value is added to the totalSupply and also balances[_address]
+# Help 
+Any advice for common problem's or issues.
 
 # Authors 
 Metacrafter Chris 
